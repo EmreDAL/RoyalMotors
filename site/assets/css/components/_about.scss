@@ -1,0 +1,50 @@
+.about {
+  // height: auto;
+  // position: relative;
+  // padding: 47px 0;
+  // background: url("/assets/img/car/layer-1.jpg") no-repeat;
+  // background-size: cover;
+  position: relative;
+  padding: 47px 0;
+  background-size: cover;
+  background-image: url("/assets/img/car/layer-1.jpg");
+
+  &:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 478px;
+    p {
+      font-size: 16px;
+      color: #0c1826;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    background-color: aqua;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+
+    h2 {
+      transform: rotate(270deg);
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  &__info {
+    position: relative;
+  }
+}

@@ -1,0 +1,60 @@
+include ../mixins/icon.pug
+.footer
+  .container
+    .footer__content
+      .wrap.xl-4.xl-gutter-16
+        .col.md-1-1
+          .footer__content--logo
+            img(src="/assets/img/brands/logo-1@3x.png", alt="").logo.logo--footerlogo
+          .footer__content--text
+            p Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır.
+        .col.md-1-1
+          .footer__content--title
+            h2 çalışmasaatleri
+          .footer__content--time
+            span
+              br
+              | PAZARTESİ - CUMA
+              br
+              | Sabah 08.00 - Akşam 18.00
+            span
+              br
+              | CUMARTESİ
+              br
+              | Sabah 08.00 - Akşam 18.00
+            span
+              br
+              | PAZAR
+              br
+              | Kapalı
+        .col.md-1-1
+          .footer__content--title
+            h2 öneçıkanlar
+          .footer__content--popular
+            img(src="assets/img/car/katman-5.png", alt="")
+            span
+              | MERCEDES AMG 6.0L
+              br
+              | Fiyat: 250.000 €
+              br
+              | Kilometre: 0
+            span
+              | MERCEDES AMG 6.0L
+              br
+              | Fiyat: 250.000 €
+              br
+              | Kilometre: 0
+        .col.md-1-1
+          .footer__content--title
+            h2 bizeulaşın
+          .footer__content--address
+            address
+              | Köybasi Cad. No:94
+              br
+              | Yeniköy / İstanbul
+              +icon('location', 'footer')
+            span
+              a(href="mailto:info@website.com") info@website.com
+                +icon('email', 'footer')
+              a(href="tel:+90 212 245 55 55") 0 212 245 55 55
+                +icon('phone', 'footer')

@@ -1,0 +1,49 @@
+include ../mixins/icon.pug
+header.header
+  .header__top
+    .container
+      .header__contact
+        .c-info
+          +icon('location', 'header')
+          span.c-info__text Köybasi Cad. No:94 Yeniköy / İstanbul
+        .c-info
+          +icon('email', 'header')
+          span.c-info__text info@website.com
+        .c-info
+          +icon('phone', 'header')
+          span.c-info__text 0212 245 55 55
+      .header__social
+        .c-info
+          span.c-info__text Bizi takip edin : &nbsp;
+          +icon('facebook', 'social')
+          +icon('instagram', 'social')
+          +icon('twitter', 'social')
+          +icon('play', 'social')
+  .header__bottom
+    .container
+      .header__logo
+        img(src="/assets/img/brands/logo-1@3x.png", alt="").logo.logo--headerlogo
+      .header__nav
+        a(href="#").js-menu-toggle.btn.btn-menu.xl-hidden
+          span
+          span
+        ul
+          li
+            a(href="#") ANASAYFA
+          li
+            a(href="#") KURUMSAL
+          li
+            a(href="#") ARAÇLAR
+          li
+            a(href="#") HİZMETLERİMİZ
+          li
+            a(href="#") GALERİ
+          li
+            a(href="#") SERVİS
+          li
+            a(href="#") İLETİŞİM
+
+        
+        
+
+

@@ -1,0 +1,115 @@
+.footer {
+  background-color: $blue;
+  padding: 66px 0;
+  position: relative;
+
+  &__content {
+    &--logo {
+      @media screen and (max-width: 468px) {
+        text-align: center;
+      }
+    }
+    &--text {
+      p {
+        font-size: 11px;
+        color: #fff;
+        text-align: center;
+        padding: 18px 0;
+      }
+    }
+    &--title {
+      padding: 20px 0;
+      position: relative;
+      padding-left: 50px;
+      h2 {
+        color: $textcolor;
+        font-size: 16px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 69px;
+          height: 3px;
+          background-color: #ee223d;
+          bottom: 0;
+        }
+      }
+    }
+    &--time {
+      color: $textcolor;
+      padding: 25px 0;
+      padding-left: 52px;
+      span {
+        font-size: 11px;
+      }
+    }
+    &--popular {
+      padding: 50px 0;
+      position: relative;
+      padding-left: 50px;
+      span {
+        font-size: 11px;
+        color: $textcolor;
+        margin-bottom: 50px;
+        margin-left: 15px;
+        position: relative;
+        display: inline-block;
+      }
+      img {
+        height: 143px;
+        width: 71px;
+        float: left;
+      }
+    }
+    &--address {
+      font-size: 11px;
+      position: relative;
+      color: $textcolor;
+      padding: 48px 0;
+      padding-left: 51px;
+      address {
+        position: relative;
+      }
+      span {
+        position: relative;
+        padding: 20px 0;
+        display: block;
+        a {
+          text-decoration: none;
+          color: $textcolor;
+          display: block;
+          margin: 25px 0;
+          position: relative;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 468px) {
+    &__content {
+      &--text {
+        p {
+          padding: 18px 61px;
+        }
+      }
+      &--popular {
+        span {
+          display: block;
+        }
+        img {
+          margin: 0 10px;
+        }
+      }
+      &--address {
+        padding-left: 0;
+        address {
+          margin-left: 80px;
+        }
+        span {
+          margin-left: 80px;
+          a {
+          }
+        }
+      }
+    }
+  }
+}

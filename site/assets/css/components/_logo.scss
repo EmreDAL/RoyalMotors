@@ -1,0 +1,12 @@
+.logo {
+  &--headerlogo {
+    width: 200px;
+    height: 26px;
+    margin-top: 13px;
+  }
+  &--footerlogo {
+    height: 32px;
+    padding: 20px 0;
+    position: relative;
+  }
+}

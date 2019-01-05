@@ -1,0 +1,287 @@
+extends ./layouts/main.pug
+
+block promo
+  .js-big-slider.big-slider
+    .item(style="background-image: url('assets/img/car/katman-1.png')")
+      .container
+        .search
+          input(type="text" placeholder="Hızlı Arama")
+          button(type="button").btn.btn--search
+            +icon('search')
+            span Ara
+        .text
+          h2 BİR OTOMOBİLDEN ÇOK DAHA FAZLASI
+    .item(style="background-image: url('assets/img/car/katman-1.png')")
+      .container
+        .search
+          input(type="text" placeholder="Hızlı Arama")
+          button(type="button").btn.btn--search
+            +icon('search')
+            span Ara
+        .text
+          h2 BİR OTOMOBİLDEN ÇOK DAHA FAZLASI
+
+block content
+  section.section
+    .container
+      .showroom.padding-title--left
+        h2.title  ÖNEÇIKANLAR
+        .js-showroom-slider
+            .showroom__item
+              figure.showroom__figure
+                img.showroom__img(src="assets/img/car/katman-2.jpg", alt="")
+                figcaption.showroom__title 2015 Tesla Model S P85D
+              .showroom__content
+                .showroom__info
+                  +icon('calendar')
+                  | 2015
+                .showroom__info
+                  +icon('speedometer')
+                  | 35700 KM
+                .showroom__info
+                  +icon('gasoline-pump')
+                  | Dizel
+                .showroom__info
+                  +icon('change-gear')
+                  | Otomatik
+                .showroom__info
+                  +icon('price-tag') 
+                  | 150.000 €
+                  +icon('cursor-click', 'right')
+            .showroom__item
+              figure.showroom__figure
+                img.showroom__img(src="assets/img/car/katman-2.jpg", alt="")
+                figcaption.showroom__title 2015 Tesla Model S P85D
+              .showroom__content
+                .showroom__info
+                  +icon('calendar')
+                  | 2015
+                .showroom__info
+                  +icon('speedometer')
+                  | 35700 KM
+                .showroom__info
+                  +icon('gasoline-pump')
+                  | Dizel
+                .showroom__info
+                  +icon('change-gear')
+                  | Otomatik
+                .showroom__info
+                  +icon('price-tag') 
+                  | 150.000 €
+                  +icon('cursor-click', 'right')
+            .showroom__item
+              figure.showroom__figure
+                img.showroom__img(src="assets/img/car/katman-2.jpg", alt="")
+                figcaption.showroom__title 2015 Tesla Model S P85D
+              .showroom__content
+                .showroom__info
+                  +icon('calendar')
+                  | 2015
+                .showroom__info
+                  +icon('speedometer')
+                  | 35700 KM
+                .showroom__info
+                  +icon('gasoline-pump')
+                  | Dizel
+                .showroom__info
+                  +icon('change-gear')
+                  | Otomatik
+                .showroom__info
+                  +icon('price-tag') 
+                  | 150.000 €
+                  +icon('cursor-click', 'right')
+            .showroom__item
+              figure.showroom__figure
+                img.showroom__img(src="assets/img/car/katman-2.jpg", alt="")
+                figcaption.showroom__title 2015 Tesla Model S P85D
+              .showroom__content
+                .showroom__info
+                  +icon('calendar')
+                  | 2015
+                .showroom__info
+                  +icon('speedometer')
+                  | 35700 KM
+                .showroom__info
+                  +icon('gasoline-pump')
+                  | Dizel
+                .showroom__info
+                  +icon('change-gear')
+                  | Otomatik
+                .showroom__info
+                  +icon('price-tag') 
+                  | 150.000 €
+                  +icon('cursor-click', 'right')
+
+  .process
+    .container
+      .process__detail
+        ul
+          li
+            a(href="#").btn.btn--process
+              +icon('car2', 'process')
+              span araçal
+          li
+            a(href="#").btn.btn--process
+              +icon('car1', 'process')
+              span araçsat
+          li
+            a(href="#").btn.btn--process
+              span kredihesapla
+              +icon('kredi', 'process')
+          li
+            a(href="#").btn.btn--process
+              span konsinye
+              +icon('konsinye', 'process')
+
+  section.brands
+    .container
+      .brands__content
+        .slider
+          .js-brand-slider.brand-slider
+            .brand-slider__slide
+              img(src="assets/img/brands/volkswagen-amblemi.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/mercedes-benz-cars-logo-emblem.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/ford-amblemi.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/ferrari-amblemi.png", alt="")
+            .brand-slider__slide
+              img(src="/assets/img/brands/bmw-2.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/audi-amblemi.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/audi-amblemi.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/volkswagen-amblemi.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/mercedes-benz-cars-logo-emblem.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/ford-amblemi.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/ferrari-amblemi.png", alt="")
+            .brand-slider__slide
+              img(src="/assets/img/brands/bmw-2.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/audi-amblemi.png", alt="")
+            .brand-slider__slide
+              img(src="assets/img/brands/audi-amblemi.png", alt="")
+              
+  section.section
+    .container
+      .showroom.padding-title--right
+        //- h2.title  ÖNE ÇIKANLAR
+        h2.title.title--right.title--red YENİGELENLER
+        .js-showroom-slider
+            .showroom__item.showroom__item--red
+              figure.showroom__figure
+                img.showroom__img(src="assets/img/car/katman-2.jpg", alt="")
+                figcaption.showroom__title 2015 Tesla Model S P85D
+              .showroom__content
+                .showroom__info
+                  +icon('calendar')
+                  | 2015
+                .showroom__info
+                  +icon('speedometer')
+                  | 35700 KM
+                .showroom__info
+                  +icon('gasoline-pump')
+                  | Dizel
+                .showroom__info
+                  +icon('change-gear')
+                  | Otomatik
+                .showroom__info
+                  +icon('price-tag') 
+                  | 150.000 €
+                  +icon('cursor-click', 'right')
+
+            .showroom__item.showroom__item--red
+              figure.showroom__figure
+                img.showroom__img(src="assets/img/car/katman-2.jpg", alt="")
+                figcaption.showroom__title 2015 Tesla Model S P85D
+              .showroom__content
+                .showroom__info
+                  +icon('calendar')
+                  | 2015
+                .showroom__info
+                  +icon('speedometer')
+                  | 35700 KM
+                .showroom__info
+                  +icon('gasoline-pump')
+                  | Dizel
+                .showroom__info
+                  +icon('change-gear')
+                  | Otomatik
+                .showroom__info
+                  +icon('price-tag') 
+                  | 150.000 €
+                  +icon('cursor-click', 'right')
+
+            .showroom__item.showroom__item--red
+              figure.showroom__figure
+                img.showroom__img(src="assets/img/car/katman-2.jpg", alt="")
+                figcaption.showroom__title 2015 Tesla Model S P85D
+              .showroom__content
+                .showroom__info
+                  +icon('calendar')
+                  | 2015
+                .showroom__info
+                  +icon('speedometer')
+                  | 35700 KM
+                .showroom__info
+                  +icon('gasoline-pump')
+                  | Dizel
+                .showroom__info
+                  +icon('change-gear')
+                  | Otomatik
+                .showroom__info
+                  +icon('price-tag') 
+                  | 150.000 €
+                  +icon('cursor-click', 'right')
+
+            .showroom__item.showroom__item--red
+              figure.showroom__figure
+                img.showroom__img(src="assets/img/car/katman-2.jpg", alt="")
+                figcaption.showroom__title 2015 Tesla Model S P85D
+              .showroom__content
+                .showroom__info
+                  +icon('calendar')
+                  | 2015
+                .showroom__info
+                  +icon('speedometer')
+                  | 35700 KM
+                .showroom__info
+                  +icon('gasoline-pump')
+                  | Dizel
+                .showroom__info
+                  +icon('change-gear')
+                  | Otomatik
+                .showroom__info
+                  +icon('price-tag') 
+                  | 150.000 €
+                  +icon('cursor-click', 'right')
+  .about
+    .container
+      .about__content
+        h2.title ILICAK OTOMOTİV
+        .about__info.padding-title--left
+          p Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli buraya metin gelecek, buraya metin gelecek yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır.
+          p Yıllar içinde, bazen kazara, bazen bilinçli olarak (örneğin mizah katılarak), çeşitli sürümleri geliştirilmiştir.
+          p Lorem Ipsum kullanmanın amacı, sürekli &apos;buraya metin gelecek, buraya metin gelecek&apos; yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. um&apos; anahtar sözcükleri ile arama yapıldığında henüz tasarım aşamasında olan çok sayıda site listelenir.
+  .contact
+    .container
+      .contact__call
+        .contact__text
+          p beniarayın
+          p talebinizi iletin satış ekibimiz size ulaşsın.
+        .contact__input
+          input(type="text" placeholder="adınızsoyadınız").input.input--in
+          input(type="text" placeholder="telefonnumaranız").input.input--in
+          button(type="button").btn.btn--send Gönder
+
+
+
+
+
+
+

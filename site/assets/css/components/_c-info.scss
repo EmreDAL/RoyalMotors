@@ -1,0 +1,20 @@
+.c-info {
+  display: inline-block;
+  span,
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .icon--header {
+    margin-right: 10px;
+  }
+
+  &__text {
+    font-size: 11px;
+  }
+
+  + .c-info {
+    margin-left: 22px;
+  }
+}

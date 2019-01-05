@@ -1,0 +1,44 @@
+.contact {
+  background-color: $blue-light;
+  position: relative;
+  display: block;
+
+  @media screen and (max-width: 468px) {
+    padding: 0 38px;
+    input {
+      width: 210px;
+      margin: 10px 0;
+      float: right;
+      clear: both;
+    }
+  }
+
+  &__call {
+    @include clearfix();
+    padding: 10px 0;
+  }
+
+  &__text {
+    float: left;
+    color: $textcolor;
+    font-weight: bold;
+
+    p {
+      margin: 0;
+      font-size: 12px;
+
+      &:first-child {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__input {
+    float: right;
+    input {
+      &::-webkit-input-placeholder {
+        color: $textcolor;
+      }
+    }
+  }
+}

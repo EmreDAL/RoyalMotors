@@ -1,0 +1,68 @@
+.showroom {
+  position: relative;
+  font-size: 13px;
+
+  &__item {
+    color: $textcolor;
+    background-color: $color-secondary;
+    &--red {
+      background-color: $itemcolor !important;
+    }
+  }
+
+  &__figure {
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &__content {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+  }
+
+  &__info {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 7px;
+    text-indent: 7px;
+
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 3px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      height: 2px;
+    }
+
+    .icon {
+      position: absolute;
+      top: 0;
+      left: -5%;
+      transform: translateX(-50%);
+
+      &--right {
+        left: 100%;
+        top: 2px;
+      }
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

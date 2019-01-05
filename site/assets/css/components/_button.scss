@@ -1,0 +1,81 @@
+.btn {
+  * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .icon {
+    padding: 6px;
+  }
+
+  &--search {
+    font-size: 18px;
+    background-color: $red;
+    padding: 6px 53px 6px 39px;
+    color: $textcolor;
+    border: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+    text-align: right;
+  }
+
+  &--process {
+    // background-color: $blue;
+    padding: 36px 20px 35px 136px;
+    border-radius: 10px;
+    margin-right: 7px;
+    color: $textcolor;
+    font-weight: bold;
+    &:hover {
+      background-color: $textcolor;
+      color: $blue;
+    }
+  }
+
+  &--send {
+    color: $textcolor;
+    background-color: $red;
+    padding: 13px 35px;
+    font-size: $showtext;
+    border: 1px solid #000;
+    @media screen and (max-width: 468px) {
+      display: block;
+    }
+  }
+}
+
+.btn-menu {
+  @media screen and (max-width: 468px) {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: block;
+    padding: 10px;
+    background-color: $color-secondary;
+    width: 40px;
+    transform: translateX(-100px);
+    border-radius: 10px;
+    span {
+      display: block;
+      height: 2px;
+      background-color: $white;
+      margin: 5px;
+    }
+  }
+}
+
+.menu-active {
+  .btn-menu {
+    left: 100px;
+    span {
+      transform-origin: center center;
+      &:first-child {
+        transform: translateY(10px) rotate(45deg);
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+
+  &--footer {
+    width: 20px;
+    height: 50px;
+    fill: #fff;
+    position: absolute;
+    left: -39px;
+    top: -14px;
+  }
+
+  &--header {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--social {
+    padding: 6px;
+    border-radius: 50%;
+    background-color: $white;
+    fill: $color-secondary;
+    width: 13px;
+    height: 13px;
+
+    + .icon--social {
+      margin-left: 3px;
+    }
+  }
+
+  &--process {
+    width: 48px;
+    height: 38px;
+    float: left;
+    position: absolute;
+    left: 13px;
+    top: 25px;
+  }
+
+  &-email {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+}

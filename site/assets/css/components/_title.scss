@@ -1,0 +1,32 @@
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  color: $color-secondary;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: 0;
+  display: inline-block;
+  @media screen and (min-width: 468px) {
+    padding: 20px 0;
+  }
+  @media screen and (min-width: 480px) {
+    transform: rotate(-90deg) translate(-50%, 0);
+    transform-origin: 0 0;
+  }
+
+  &--red {
+    color: $color-primary;
+  }
+
+  &--right {
+    margin-left: -30px;
+    left: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+    transform: none;
+    position: static;
+    margin-left: 15px;
+  }
+}
